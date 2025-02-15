@@ -8,7 +8,7 @@ def run(
 ) -> None:
     server_adress = (" ", 8000)
     http_server = server_class(server_adress, handler_class)
-    print(f"Rtarting server on port {port}")
+    print(f"Starting server on port {port}")
     try:
         http_server.serve_forever()
     except KeyboardInterrupt:
