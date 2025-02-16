@@ -12,7 +12,7 @@ class SimpleHTTPRequestHendler(BaseHTTPRequestHandler):
             self.end_headers()
             response = {"message": "HelloWorld!"}
             self.wfile.write(json.dumps(response).encode())
-        self.send_response(200)
+        self.send_response(404)
         self.end_headers()
 
     def do_POST(self) -> None:

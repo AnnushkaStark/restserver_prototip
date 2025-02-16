@@ -6,7 +6,7 @@ from handlers.main import RestserverHandler
 def run(
     server_class=HTTPServer, handler_class=RestserverHandler, port: int = 8000
 ) -> None:
-    server_adress = (" ", 8000)
+    server_adress = ("", 8000)
     http_server = server_class(server_adress, handler_class)
     print(f"Starting server on port {port}")
     try:
